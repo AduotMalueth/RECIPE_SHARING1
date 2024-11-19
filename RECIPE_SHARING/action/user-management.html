@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management</title>
+    <link rel="stylesheet" href="user-management.css">
+</head>
+<body>
+    <div class="header-container">
+        <h1>User Management</h1>
+        <button onclick="goBack()" class="back-button">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M19 12H5M12 19l-7-7 7-7"/>
+            </svg>
+            Go Back
+        </button>
+    </div>
+
+    <section id="user-form">
+        <h2>Add/Edit User</h2>
+        <form id="userForm">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <button type="submit" class="btn btn-add" id="submitBtn">Add User</button>
+        </form>
+    </section>
+
+    <section id="user-table">
+        <h2>All Users</h2>
+        <table id="userList">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Date Added</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </section>
+
+    <footer>
+        <p>Admin Dashboard - Recipe Sharing Platform &copy; 2024</p>
+    </footer>
+
+    <script src="user-management.js"></script>
+</body>
+</html>

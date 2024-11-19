@@ -1,0 +1,85 @@
+/* General Reset */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background: url('./images/OIP.jpeg') no-repeat center center fixed;
+    background-size: cover; /* Ensures the image covers the entire background */
+    color: #ffffff; /* White text for better contrast against the background */
+}
+
+/* Container Styles */
+.container {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black for contrast */
+    padding: 20px;
+    border-bottom: 2px solid #ccc;
+}
+
+/* Header Title */
+.container h1 {
+    font-size: 2.5em;
+    color: #f8f9fa; /* Light gray for a polished look */
+    margin: 0;
+}
+
+/* Navbar Styles */
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navbar ul li {
+    display: inline-block;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    font-size: 1em;
+    color: #007bff; /* Blue color for links */
+    padding: 10px 15px;
+    border: 1px solid #007bff; /* Border to match the link color */
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+    transition: all 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Content Styles */
+.content {
+    text-align: center;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px; /* Restrict width for readability */
+}
+
+.content h3 {
+    font-size: 1.5em;
+    color: #f8f9fa; /* Light gray for subheadings */
+    margin-bottom: 20px;
+}
+
+.content h1 {
+    font-size: 2em;
+    color: #f8f9fa;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 1em;
+    color: #d1d1d1; /* Light gray for readability */
+    line-height: 1.6;
+    margin: 0 auto;
+    max-width: 600px; /* Limit paragraph width for better readability */
+}

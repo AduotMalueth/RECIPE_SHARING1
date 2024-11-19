@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Feed</title>
+    <link rel="stylesheet" href="Recipes.css">
+    
+</head>
+<body>
+    <button onclick="goBack()" class="back-button">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M19 12H5M12 19l-7-7 7-7"/>
+        </svg>
+        Go Regular_Admin
+    </button>
+    <h1>Recipe Feed</h1>
+
+    <!-- Search box -->
+    <div class="search-container">
+        <form action="Recipes.php" method="post">
+            <input type="text" id="searchInput" name="search" placeholder="Search for recipes...">
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <!-- Grid of Recipes -->
+    <div class="recipe-grid" id="recipeGrid">
+        <!-- Recipe Cards -->
+        <div class="recipe-card">
+            <img src="images/OIP (1).jpeg" style="max-width:100%;height:auto;">
+            <h3>Fried Fish</h3>
+            <p>Healthy and delicious grilled fish with herbs.</p>
+            <div class="star-rating">
+                <span class="star" data-value="1">&#9733;</span>
+                <span class="star" data-value="2">&#9733;</span>
+                <span class="star" data-value="3">&#9733;</span>
+                <span class="star" data-value="4">&#9733;</span>
+                <span class="star" data-value="5">&#9733;</span>
+            </div>
+        </div>
+        <div class="recipe-card">
+            <img src="images/OIP (2).jpeg" style="max-width:100%;height:auto;">
+            <h3>Bread Food</h3>
+            <p>A quick and tasty vegetable stir fry with soy sauce.</p>
+            <div class="star-rating">
+                <span class="star" data-value="1">&#9733;</span>
+                <span class="star" data-value="2">&#9733;</span>
+                <span class="star" data-value="3">&#9733;</span>
+                <span class="star" data-value="4">&#9733;</span>
+                <span class="star" data-value="5">&#9733;</span>
+            </div>
+        </div>
+        <div class="recipe-card">
+            <img src="images/OIP (3).jpeg" style="max-width:100%;height:auto;">
+            <h3>Paper Food</h3>
+            <p>A quick and tasty sauce.</p>
+            <div class="star-rating">
+                <span class="star" data-value="1">&#9733;</span>
+                <span class="star" data-value="2">&#9733;</span>
+                <span class="star" data-value="3">&#9733;</span>
+                <span class="star" data-value="4">&#9733;</span>
+                <span class="star" data-value="5">&#9733;</span>
+            </div>
+        </div>
+        <div class="recipe-card">
+            <img src="images/OIP (4).jpeg" style="max-width:100%;height:auto;">
+            <h3>Fried Meat with Ingredients</h3>
+            <p>Rich and moist tasty topped food with ganache.</p>
+            <div class="star-rating">
+                <span class="star" data-value="1">&#9733;</span>
+                <span class="star" data-value="2">&#9733;</span>
+                <span class="star" data-value="3">&#9733;</span>
+                <span class="star" data-value="4">&#9733;</span>
+                <span class="star" data-value="5">&#9733;</span>
+            </div>
+        </div>
+        <div class="recipe-card">
+            <img src="images/OIP (5).jpeg" style="max-width:100%;height:auto;">
+            <h3>Fried delicious-fried-chicken with Ingredients</h3>
+            <p> This dish provides a delicious contrast of flavors.</p>
+            <div class="star-rating">
+                <span class="star" data-value="1">&#9733;</span>
+                <span class="star" data-value="2">&#9733;</span>
+                <span class="star" data-value="3">&#9733;</span>
+                <span class="star" data-value="4">&#9733;</span>
+                <span class="star" data-value="5">&#9733;</span>
+            </div>
+        </div>
+        <div class="recipe-card">
+            <img src="images/OIP (6).jpeg" style="max-width:100%;height:auto;">
+            <h3>Spicy Fried Chicken with Ingredients</h3>
+            <p>Perfect for those who crave a bit of spice in their meal.</p>
+            <div class="star-rating">
+                <span class="star" data-value="1">&#9733;</span>
+                <span class="star" data-value="2">&#9733;</span>
+                <span class="star" data-value="3">&#9733;</span>
+                <span class="star" data-value="4">&#9733;</span>
+                <span class="star" data-value="5">&#9733;</span>
+            </div>
+        </div>
+        <div class="recipe-card">
+            <img src="images/OIP (7).jpeg" style="max-width:100%;height:auto;">
+            <h3>Fried delicious chicken with Ingredients</h3>
+            <p>Rich Herb-Crusted Fried Chicken.</p>
+            <div class="star-rating">
+                <span class="star" data-value="1">&#9733;</span>
+                <span class="star" data-value="2">&#9733;</span>
+                <span class="star" data-value="3">&#9733;</span>
+                <span class="star" data-value="4">&#9733;</span>
+                <span class="star" data-value="5">&#9733;</span>
+            </div>
+        </div>
+        <div class="recipe-card">
+            <img src="images/OIP (8).jpeg" style="max-width:100%;height:auto;">
+            <h3>Fried delicious chicken with Ingredients</h3>
+            <p>Rich and tasty Classic Southern Fried Chicken.</p>
+            <div class="star-rating">
+                <span class="star" data-value="1">&#9733;</span>
+                <span class="star" data-value="2">&#9733;</span>
+                <span class="star" data-value="3">&#9733;</span>
+                <span class="star" data-value="4">&#9733;</span>
+                <span class="star" data-value="5">&#9733;</span>
+            </div>
+        </div>
+        <div class="recipe-card">
+            <img src="images/OIP (9).jpeg" style="max-width:100%;height:auto;">
+            <h3>Delicious-fried-chicken with Ingredients</h3>
+            <p>Rich and delicious-fried-chicken topped food with ganache.</p>
+            <div class="star-rating">
+                <span class="star" data-value="1">&#9733;</span>
+                <span class="star" data-value="2">&#9733;</span>
+                <span class="star" data-value="3">&#9733;</span>
+                <span class="star" data-value="4">&#9733;</span>
+                <span class="star" data-value="5">&#9733;</span>
+            </div>
+        </div>
+        <div class="recipe-card">
+            <img src="images/OIP (10).jpeg" style="max-width:100%;height:auto;">
+            <h3>Delicious-fried-chicken with Ingredients</h3>
+            <p>It's a delightful fusion of sweet and savory that will leave you wanting more.</p>
+            <div class="star-rating">
+                <span class="star" data-value="1">&#9733;</span>
+                <span class="star" data-value="2">&#9733;</span>
+                <span class="star" data-value="3">&#9733;</span>
+                <span class="star" data-value="4">&#9733;</span>
+                <span class="star" data-value="5">&#9733;</span>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const stars = document.querySelectorAll(".star");
+            stars.forEach(star => {
+                star.addEventListener("click", function () {
+                    const rating = this.dataset.value;
+    
+                    // Highlight the clicked star and all preceding stars
+                    const parent = this.parentNode;
+                    parent.querySelectorAll(".star").forEach(s => {
+                        s.classList.remove("active");
+                        if (s.dataset.value <= rating) {
+                            s.classList.add("active");
+                        }
+                    });
+    
+                    // Optionally, save the rating (e.g., send to the server or store locally)
+                    console.log(`Rated ${rating} stars`);
+                });
+            });
+        });
+
+        function goBack() {
+            // Check if there's a previous page in the history
+            if (window.history.length > 1) {
+                window.history.back();
+            } else {
+                // If no history exists, redirect to a default page (e.g., home)
+                window.location.href = '/';
+            }
+        }
+    </script>
+    
+</body>
+</html>
